@@ -7,11 +7,11 @@
 
 #define si 5
 
-void printbo(char[][5]);//¦C¦L
+void printbo(char[][5]);//åˆ—å°
 
-void prbu(char[][5], int, int);//¤ÏÂà
+void prbu(char[][5], int, int);//åè½‰
 
-int chk(char[][5]);//¹LÃö
+int chk(char[][5]);//éé—œ
 
 void py(int);
 
@@ -23,11 +23,11 @@ void gack(int,float);
 
 void ckwr(int);
 
-int main() // ¥Dµ{¦¡
+int main() // ä¸»ç¨‹å¼
 {
     int nd,mo;
-    printf("¼Ò¦¡0: Â÷¶}, ¼Ò¦¡1: ¹CÀ¸¤¶²Ğ, ¼Ò¦¡2: ¹CÀ¸¹Cª±, ¼Ò¦¡3: ¹CÀ¸ºaÅAº]\n");
-    printf("½Ğ¿ï¾Ü¼Ò¦¡: ");
+    printf("æ¨¡å¼0: é›¢é–‹, æ¨¡å¼1: éŠæˆ²ä»‹ç´¹, æ¨¡å¼2: éŠæˆ²éŠç©, æ¨¡å¼3: éŠæˆ²æ¦®è­½æ¦œ\n");
+    printf("è«‹é¸æ“‡æ¨¡å¼: ");
     scanf("%d",&mo);
     while (mo!=0)
     {
@@ -37,8 +37,8 @@ int main() // ¥Dµ{¦¡
             pt(mo);
             break;
         case 2:
-            printf("\033[0m\033[1;31m***¥u¦³Ãø«×5¥i¥H±N¹Cª±¬ö¿ı,¬ö¿ı¶iºaÅAº]¤º***\033[0m\n");
-            printf("½Ğ¿ï¾ÜÃø«×(1~5): ");
+            printf("\033[0m\033[1;31m***åªæœ‰é›£åº¦5å¯ä»¥å°‡éŠç©ç´€éŒ„,ç´€éŒ„é€²æ¦®è­½æ¦œå…§***\033[0m\n");
+            printf("è«‹é¸æ“‡é›£åº¦(1~5): ");
             scanf("%d",&nd);
             py(nd);
             break;
@@ -46,39 +46,39 @@ int main() // ¥Dµ{¦¡
             ptga(mo);
             break;
         case 111:
-            printf("\033[0m\033[1;32m***¶}µo¤H­û¼Ò¦¡***\033[0m\n");
+            printf("\033[0m\033[1;32m***é–‹ç™¼äººå“¡æ¨¡å¼***\033[0m\n");
             py(115);
             break;
         default:
             break;
         }
         printf("-------------------------------------------------------------------\n");
-        printf("¼Ò¦¡0: Â÷¶}, ¼Ò¦¡1: ¹CÀ¸¤¶²Ğ, ¼Ò¦¡2: ¹CÀ¸¹Cª±, ¼Ò¦¡3: ¹CÀ¸ºaÅAº]\n");
-        printf("½Ğ¿ï¾Ü¼Ò¦¡: ");
+        printf("æ¨¡å¼0: é›¢é–‹, æ¨¡å¼1: éŠæˆ²ä»‹ç´¹, æ¨¡å¼2: éŠæˆ²éŠç©, æ¨¡å¼3: éŠæˆ²æ¦®è­½æ¦œ\n");
+        printf("è«‹é¸æ“‡æ¨¡å¼: ");
         scanf("%d", &mo);
     }
     system("pause");
     return 0;
 }
 
-void pt(int pt)// ¼Ò¦¡1 
+void pt(int pt)// æ¨¡å¼1 
 {
     printf("-------------------------------------------------------------------\n");
-    printf("¤Q¦r·À¿O¹CÀ¸,¹CÀ¸³W«h¤¶²Ğ\n");
-    printf("5*5ªº¿O¤¤¡A«ö¤U¸ÓÁû¿Oªw¡A¸ÓÁû¿Oªw¦æ»P¦C³£·À¿O¡A¦ı¸ÓÁû¿Oªw«ùÄò«G¿O\n");
-    printf("¨Ò¦p:¿é¤JA1¡AA¦C¿Oªwª¬ºA¤ÏÂà¡A1¦æ¿Oªwª¬ºA¤ÏÂà\n");
-    printf("¡@¡@¿é¤J«e¡@¡@¡@¡@¡@¿é¤J«á\n");
-    printf("¡@¢°¢±¢²¢³¢´¡@¡@¡@¢°¢±¢²¢³¢´\n");
-    printf("¢Ï¡¯¢İ¢İ¢İ¢İ¡@¡@¢Ï¢İ¡¯¡¯¡¯¡¯\n");
-    printf("¢Ğ¡¯¡¯¡¯¡¯¡¯¡@¡@¢Ğ¢İ¡¯¡¯¡¯¡¯\n");
-    printf("¢Ñ¡¯¢İ¢İ¢İ¢İ¡@¡@¢Ñ¢İ¢İ¢İ¢İ¢İ\n");
-    printf("¢Ò¡¯¢İ¢İ¢İ¢İ¡@¡@¢Ò¢İ¢İ¢İ¢İ¢İ\n");
-    printf("¢Ó¡¯¢İ¢İ¢İ¢İ¡@¡@¢Ó¢İ¢İ¢İ¢İ¢İ\n");
+    printf("åå­—æ»…ç‡ˆéŠæˆ²,éŠæˆ²è¦å‰‡ä»‹ç´¹\n");
+    printf("5*5çš„ç‡ˆä¸­ï¼ŒæŒ‰ä¸‹è©²é¡†ç‡ˆæ³¡ï¼Œè©²é¡†ç‡ˆæ³¡è¡Œèˆ‡åˆ—éƒ½æ»…ç‡ˆï¼Œä½†è©²é¡†ç‡ˆæ³¡æŒçºŒäº®ç‡ˆ\n");
+    printf("ä¾‹å¦‚:è¼¸å…¥A1ï¼ŒAåˆ—ç‡ˆæ³¡ç‹€æ…‹åè½‰ï¼Œ1è¡Œç‡ˆæ³¡ç‹€æ…‹åè½‰\n");
+    printf("ã€€ã€€è¼¸å…¥å‰ã€€ã€€ã€€ã€€ã€€è¼¸å…¥å¾Œ\n");
+    printf("ã€€ï¼‘ï¼’ï¼“ï¼”ï¼•ã€€ã€€ã€€ï¼‘ï¼’ï¼“ï¼”ï¼•\n");
+    printf("ï¼¡ï¼Šï¼¯ï¼¯ï¼¯ï¼¯ã€€ã€€ï¼¡ï¼¯ï¼Šï¼Šï¼Šï¼Š\n");
+    printf("ï¼¢ï¼Šï¼Šï¼Šï¼Šï¼Šã€€ã€€ï¼¢ï¼¯ï¼Šï¼Šï¼Šï¼Š\n");
+    printf("ï¼£ï¼Šï¼¯ï¼¯ï¼¯ï¼¯ã€€ã€€ï¼£ï¼¯ï¼¯ï¼¯ï¼¯ï¼¯\n");
+    printf("ï¼¤ï¼Šï¼¯ï¼¯ï¼¯ï¼¯ã€€ã€€ï¼¤ï¼¯ï¼¯ï¼¯ï¼¯ï¼¯\n");
+    printf("ï¼¥ï¼Šï¼¯ï¼¯ï¼¯ï¼¯ã€€ã€€ï¼¥ï¼¯ï¼¯ï¼¯ï¼¯ï¼¯\n");
     printf("\n");
-    printf("\033[0m\033[1;31mÅ¥»¡¤C¨B¤§¤º¥²¦³³Ì¨Î¸Ñ,µ±ºÉ¸£¥Ä§â¦W¦r¯d¦bºaÅAº]§a!!!\033[0m\n");
+    printf("\033[0m\033[1;31mè½èªªä¸ƒæ­¥ä¹‹å…§å¿…æœ‰æœ€ä½³è§£,çµç›¡è…¦æ±æŠŠåå­—ç•™åœ¨æ¦®è­½æ¦œå§!!!\033[0m\n");
 }
 
-void py(int py)// ¼Ò¦¡2
+void py(int py)// æ¨¡å¼2
 {
     char bo[si][si];
     char name[100] = " ";
@@ -104,31 +104,31 @@ void py(int py)// ¼Ò¦¡2
         prbu(bo, r, c);
     }
     printf("-------------------------------------------------------------------\n");
-    printf("Åwªï¹Cª±¡A¤Q¦r·À¿O¹CÀ¸\n");
+    printf("æ­¡è¿éŠç©ï¼Œåå­—æ»…ç‡ˆéŠæˆ²\n");
     printbo(bo);
     startTime = time(NULL);
     while (1) 
     {
         char ip[3];
-        printf("½Ğ¿é¤J®y¼Ğ(¨Ò¦p:A1,b2):");
+        printf("è«‹è¼¸å…¥åº§æ¨™(ä¾‹å¦‚:A1,b2):");
         scanf("%s", ip);
         ip[0] = toupper(ip[0]);
         int row = ip[0] - 'A';
         int col = ip[1] - '1';
         if (row < 0 || row >= si || col < 0 || col >= si) 
         {
-            printf("¿é¤J®y¼Ğ¿ù»~¡A½Ğ­«·s¿é¤J\n");
+            printf("è¼¸å…¥åº§æ¨™éŒ¯èª¤ï¼Œè«‹é‡æ–°è¼¸å…¥\n");
             continue;
         }
         prbu(bo, row, col);
         sp++;
-        printf("²Ä%d¨B:\n", sp);
+        printf("ç¬¬%dæ­¥:\n", sp);
         printbo(bo);
         if (chk(bo)) 
         {
             endTime = time(NULL);
             double edt = difftime(endTime, startTime);
-            printf("®¥³ß¹LÃö Á`¯Ó %d ¨B Á`¯Ó®É %.2f ¬í\n", sp, edt);
+            printf("æ­å–œéé—œ ç¸½è€— %d æ­¥ ç¸½è€—æ™‚ %.2f ç§’\n", sp, edt);
             if (py == 5)
             {
                gack(sp,edt);
@@ -139,7 +139,7 @@ void py(int py)// ¼Ò¦¡2
 }
 
 
-void printbo(char bo[si][si]) // ¼Ò¦¡2 ¦C¦L
+void printbo(char bo[si][si]) // æ¨¡å¼2 åˆ—å°
 {
     printf("\n  1 2 3 4 5\n");
     for (int i = 0; i < si; i++) 
@@ -155,7 +155,7 @@ void printbo(char bo[si][si]) // ¼Ò¦¡2 ¦C¦L
 
 
 
-void prbu(char bo[si][si], int row, int col) // ¼Ò¦¡2 ¤ÏÂà
+void prbu(char bo[si][si], int row, int col) // æ¨¡å¼2 åè½‰
 {
     bo[row][col] = (bo[row][col] == 'O') ? '*' : 'O';
     for (int i = 0; i < si; i++) 
@@ -176,7 +176,7 @@ void prbu(char bo[si][si], int row, int col) // ¼Ò¦¡2 ¤ÏÂà
 
 
 
-int chk(char bo[si][si]) // ¼Ò¦¡2  ³qÃö?
+int chk(char bo[si][si]) // æ¨¡å¼2  é€šé—œ?
 {
     for (int i = 0; i < si; i++) 
     {
@@ -198,14 +198,14 @@ struct product
     float et;
 };
 
-void ptga(int da)// ¼Ò¦¡3 Åã¥Ü
+void ptga(int da)// æ¨¡å¼3 é¡¯ç¤º
 {
         FILE* pfile;
         struct product ga[3];
         int i = 0, iNum = 0;
         if ((pfile = fopen("..\\41243232\\game.txt", "r")) == NULL) 
         {
-            printf("game.txt ÀÉ®×µLªk¶}±Ò");
+            printf("game.txt æª”æ¡ˆç„¡æ³•é–‹å•Ÿ");
             system("pause");
         }
 
@@ -217,26 +217,27 @@ void ptga(int da)// ¼Ò¦¡3 Åã¥Ü
             }
         }
         iNum = i;
-        printf("\033[0m\033[1;43m***¾ú¥v³Ì¨Î¬ö¿ı¤T¦Wª±®a***\033[0m\n");
+        printf("\033[0m\033[1;43m***æ­·å²æœ€ä½³ç´€éŒ„ä¸‰åç©å®¶***\033[0m\n");
         for (i = 0;i < iNum;i++)
         {
-            printf("²Ä%d¦W ª±®a¦WºÙ: %s  ¨Ï¥Î¨B¼Æ: %d  ¨Ï¥Î¬í¼Æ: %.2f\n", i+1,ga[i].gName, ga[i].sp, ga[i].et);
+            printf("ç¬¬%då ç©å®¶åç¨±: %s  ä½¿ç”¨æ­¥æ•¸: %d  ä½¿ç”¨ç§’æ•¸: %.2f\n", i+1,ga[i].gName, ga[i].sp, ga[i].et);
         }
         fclose(pfile);
 }
 
 
 
-void gack(int spck,float etck)// ¼Ò¦¡2 ³Ì¨Î?
+void gack(int spck,float etck)// æ¨¡å¼2 æœ€ä½³?
 {
     FILE* pfile;
     struct product gack[4];
+    struct product tp;
     int i = 0, iNum = 0, t = 0, min = 0, amin = 0;
     float ft;
     char st[100] = " ";
     if ((pfile = fopen("..\\41243232\\game.txt", "r")) == NULL)
     {
-        printf("game.txt ÀÉ®×µLªk¶}±Ò");
+        printf("game.txt æª”æ¡ˆç„¡æ³•é–‹å•Ÿ");
         system("pause");
     }
     while (!feof(pfile))
@@ -247,8 +248,8 @@ void gack(int spck,float etck)// ¼Ò¦¡2 ³Ì¨Î?
         }
     }
     iNum = i;
-    printf("ª±®a¦WºÙ­Y¦³ªÅ¥Õ½Ğ¥Î_¥N´À\n");
-    printf("¿é¤Jª±®a¦WºÙ : ");
+    printf("ç©å®¶åç¨±è‹¥æœ‰ç©ºç™½è«‹ç”¨_ä»£æ›¿\n");
+    printf("è¼¸å…¥ç©å®¶åç¨± : ");
     scanf("%s", gack[3].gName);
     gack[3].sp = spck;
     gack[3].et = etck;
@@ -263,17 +264,9 @@ void gack(int spck,float etck)// ¼Ò¦¡2 ³Ì¨Î?
                 min = k;
             }
         }
-        t = gack[min].sp;
-        gack[min].sp = gack[j].sp;
-        gack[j].sp = t;
-
-        ft = gack[min].et;
-        gack[min].et = gack[j].et;
-        gack[j].et = ft;
-
-        strcpy(st, gack[min].gName);
-        strcpy(gack[min].gName, gack[j].gName);
-        strcpy(gack[j].gName, st);
+       tp = gack[min];
+       gack[min] = gack[j];
+       gack[j] = tp;
     }
 
     for (int j = 0; j < 4; j++) {
@@ -286,23 +279,15 @@ void gack(int spck,float etck)// ¼Ò¦¡2 ³Ì¨Î?
                 min = k;
             }
         }
-        t = gack[min].sp;
-        gack[min].sp = gack[j].sp;
-        gack[j].sp = t;
-
-        ft = gack[min].et;
-        gack[min].et = gack[j].et;
-        gack[j].et = ft;
-
-        strcpy(st, gack[min].gName);
-        strcpy(gack[min].gName, gack[j].gName);
-        strcpy(gack[j].gName, st);
+       tp = gack[min];
+       gack[min] = gack[j];
+       gack[j] = tp;
     }
 
     fclose(pfile);
     if ((pfile = fopen("..\\41243232\\game.txt", "w")) == NULL)
     {
-        printf("game.txt ÀÉ®×µLªk¶}±Ò");
+        printf("game.txt æª”æ¡ˆç„¡æ³•é–‹å•Ÿ");
         system("pause");
     }
     for (int i = 0;i <iNum;i++)
